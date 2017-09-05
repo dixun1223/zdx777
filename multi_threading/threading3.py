@@ -3,7 +3,7 @@
 # __date__ = '2017-09-05 18:23'
 
 '''
-全局变量local_school就是一个ThreadLocal对象，每个Thread对它都可以读写student属性，但互不影响。
+全局变量local_school就是一个ThreadLocal对象，每个Thread对它都可以读写student属性，但互不影响11。
 你可以把local_school看成全局变量，但每个属性如local_school.student都是线程的局部变量，
 可以任意读写而互不干扰，也不用管理锁的问题，ThreadLocal内部会处理。
 可以理解为全局变量local_school是一个dict，不但可以用local_school.student，还可以绑定其他变量，如local_school.teacher等等。
